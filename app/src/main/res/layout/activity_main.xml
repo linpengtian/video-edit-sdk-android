@@ -1,0 +1,62 @@
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" 
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    android:background="#FFA500"
+	android:orientation="vertical">
+
+
+	<TextView
+		android:id="@+id/id_main_text1"
+		android:layout_marginTop="@dimen/dp80"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="This is the simplest demo\n "
+		android:textColor="@color/red"
+		android:textSize="@dimen/dp30"
+		android:layout_marginLeft="@dimen/dp20"
+		/>
+
+	<TextView
+		android:layout_below="@id/id_main_text1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/dp20"
+		android:text="full Demo App: (google Play)"
+		/>
+	<ImageView
+		android:layout_width="250dp"
+		android:layout_height="250dp"
+		android:src="@drawable/lansong_google_play_link"/>
+
+
+		<RelativeLayout
+			android:id="@+id/id_main_list_lso_layer"
+			style="@style/main_item_relative_layout2">
+			<TextView   android:text="视频编辑SDK(Video Editor)"
+				style="@style/main_item_text_view"/>
+			<TextView  style="@style/main_item_arrow"/>
+		</RelativeLayout>
+
+
+	<RelativeLayout
+		android:id="@+id/id_main_list_aex"
+		android:layout_below="@id/id_main_list_lso_layer"
+		style="@style/main_item_relative_layout2">
+		<TextView   android:text="AE模板SDK(AE Template)" style="@style/main_item_text_view"/>
+		<TextView  style="@style/main_item_arrow"/>
+	</RelativeLayout>
+
+
+
+	<TextView
+		android:id="@+id/id_main_version_hint"
+		android:layout_gravity="center_horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="@dimen/dp30"
+		android:gravity="center"
+		android:text="version:"
+		/>
+
+</LinearLayout>
