@@ -175,7 +175,7 @@ public class VideoPlayerActivity extends Activity {
                 @Override
                 public void onFrameUpdate(VideoPlayer mp, int currentMs) {
                     if(tvProgress!=null){
-                        tvProgress.setText(String.valueOf(convertTime(currentMs*1000)));
+                        tvProgress.setText(String.valueOf(convertTime(currentMs* 1000L)));
                     }
                 }
             });

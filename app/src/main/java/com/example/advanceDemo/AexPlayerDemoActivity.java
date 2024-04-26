@@ -1,7 +1,7 @@
 package com.example.advanceDemo;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -18,7 +18,6 @@ import com.example.advanceDemo.utils.DemoProgressDialog;
 import com.example.advanceDemo.utils.DemoUtil;
 import com.lansoeditor.advanceDemo.R;
 import com.lansosdk.aex.LSOAexImage;
-import com.lansosdk.aex.LSOAexOption;
 import com.lansosdk.box.LSOAexModule;
 import com.lansosdk.box.LSOLayerPosition;
 import com.lansosdk.box.LSOLog;
@@ -275,6 +274,7 @@ public class AexPlayerDemoActivity extends Activity implements View.OnClickListe
         });
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()) {

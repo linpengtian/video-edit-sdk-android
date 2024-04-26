@@ -1,11 +1,11 @@
 package com.example.advanceDemo;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.anthonycr.grant.PermissionsManager;
@@ -23,6 +23,7 @@ public class ListMainActivity extends Activity implements OnClickListener {
     int permissionCnt = 0;
     private boolean isPermissionOk = false;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,6 +59,7 @@ public class ListMainActivity extends Activity implements OnClickListener {
         LanSongFileUtil.deleteDefaultDir();
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
 

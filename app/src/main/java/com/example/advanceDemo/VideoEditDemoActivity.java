@@ -1,5 +1,6 @@
 package com.example.advanceDemo;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -226,6 +227,7 @@ public class VideoEditDemoActivity extends Activity implements View.OnClickListe
     private LSOLayer concatBmpLayer =null;
     private LSOLayer overlayLayer=null;
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
 
